@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display project title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('ShoppingCart app is running!');
+    expect(page.getTitleText()).toEqual('Shopping Cart');
   });
 
   afterEach(async () => {
