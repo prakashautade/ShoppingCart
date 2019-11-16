@@ -5,7 +5,7 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
-    return element(by.css('app-root .display-4')).getText() as Promise<string>;
+  getNaviationBar() {
+    return element(by.tagName('app-navigation-bar'));
   }
 }
