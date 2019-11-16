@@ -9,14 +9,17 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+cache:
+  directories:
+     - ./node_modules      
 branches:
   only:
   - master
-before_script:
+install:
   - npm install
 script:
 - ng lint
-- npm run test-headless
+- npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 - npm run e2e
 - ng build --prod --base-href https://prakashautade.github.io/ShoppingCart/
 deploy:

@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationBarComponent } from './navigation-bar.component';
+import { AppComponent } from '../app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 describe('NavigationBarComponent', () => {
   let component: NavigationBarComponent;
@@ -8,9 +11,9 @@ describe('NavigationBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationBarComponent ]
-    })
-    .compileComponents();
+      declarations: [ AppComponent, NavigationBarComponent ],
+      imports: [ BrowserModule, NgbModule ]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
