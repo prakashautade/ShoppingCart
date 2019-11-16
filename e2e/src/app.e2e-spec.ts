@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display project title', () => {
+  it('should render navigation bar', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Shopping Cart');
+    expect(page.getNaviationBar()).toBeDefined();
   });
 
   afterEach(async () => {
