@@ -19,7 +19,7 @@ install:
   - npm install
 script:
 - ng lint
-- npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+- npm run coveralls
 - npm run e2e
 - ng build --prod --base-href https://prakashautade.github.io/ShoppingCart/
 deploy:

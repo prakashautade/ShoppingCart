@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/prakashautade/ShoppingCart.svg?branch=master)](https://travis-ci.com/prakashautade/ShoppingCart)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/prakashautade/ShoppingCart.svg?branch=master)](https://travis-ci.com/prakashautade/ShoppingCart) [![Coverage Status](https://coveralls.io/repos/github/prakashautade/ShoppingCart/badge.svg?branch=master)](https://coveralls.io/github/prakashautade/ShoppingCart?branch=master)
