@@ -25,4 +25,17 @@ describe('NavigationBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('On create, collapseNavBar should be true', () => {
+    fixture = TestBed.createComponent(NavigationBarComponent);
+    const navBar = fixture.debugElement.componentInstance;
+    expect(navBar.canCollapseNavBar()).toEqual(true);
+  });
+
+  it('collapseNavBar should be toglled', () => {
+    fixture = TestBed.createComponent(NavigationBarComponent);
+    const navBar = fixture.debugElement.componentInstance;
+    navBar.toggleNavbar();
+    expect(navBar.canCollapseNavBar()).toEqual(false);
+  });
 });
