@@ -9,7 +9,7 @@ export class NavigationBarComponent implements OnInit {
 
   private collapseNavBar: boolean;
 
-  constructor() { 
+  constructor() {
     this.collapseNavBar = true;
   }
 
